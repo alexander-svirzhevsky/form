@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="form" class="form">
+        <h1 class="form__title">Отправка формы на почту</h1>
+        <form action="#" class="form-body">
+            <div class="form-item">
+                <label for="form__name" class="form__label">Имя:*</label>
+                <input type="text" id="form__name" name="name" class="form__input _req">
+            </div>
+            <div class="form-item">
+                <label for="form__mail" class="form__label">E-mail:*</label>
+                <input type="text" id="form__mail" name="mail" class="form__input _req _mail">
+            </div>
+            <div class="form-item">
+                <label for="form__mail" class="form__label">Пол:</label>
+                <div class="options">
+                    <div class="options__item">
+                        <input type="radio" name="gender" id="form-male" value="male" class="option__radio">
+                        <label for="form-male" class="option__label">Мужчина</label>
+                    </div>
+                    <div class="options__item">
+
+                        <input type="radio" name="gender" id="form-female" value="female" class="option__radio">
+                        <label for="form-female" class="option__label">Женщина</label>
+                    </div>
+                </div>
+            </div>
+            <div class="form-item">
+                <label for="text-area">Введите текст:</label>
+                <textarea name="message" id="text-area" class="form__input"></textarea>
+            </div>
+            <div class="form-item">
+                <div class="form__label">Прикрепить фото</div>
+                <div class="file">
+                    <div class="file__item">
+                        <input class="form__image" type="file" name="image" id="formImage" accept=".jpg, .png, .gif">
+                        <div class="file__button">выбрать</div>
+                    </div>
+                    <div class="file__preview"></div>
+                </div>
+            </div>
+            <div class="form-item">
+                <div class="checkbox">
+                    <input type="checkbox" id="form__check-box" name="accept" class="checkbox__input _req">
+                    <label for="form__check-box" class="checkbox__label"><span>Я даю свое согласие на обработку
+                            персональных
+                            данных</span></label>
+                </div>
+            </div>
+            <button class="form__button" type="submit">Отправить</button>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+
+</html>

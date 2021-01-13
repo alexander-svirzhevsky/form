@@ -177,6 +177,15 @@ textarea  {
     cursor: pointer;
 }
 
+.file__preview {
+    display: inline-flex;
+    max-width: 100px;
+}
+
+.file__preview img {
+    max-width: 100%;
+}
+
 .file__button {
     display: inline-flex;
     min-height: 40px;
